@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#l {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+#h {
+    height: 20vh;
+    width: 100%;
+    background-image: url(./assets/Head-Bg.jpg);
+    /* background-color: #41C9E2; */
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1%;
+}
+
+#h>div {
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#l>#h>.a {
+    background-image: url(./assets/Picsart_24-03-30_01-47-18-542-removebg-preview.png);
+    background-size: 20%;
+
+
+}
+
+#l>#h>.b {
+    background-image: url(./assets/Picsart_24-03-30_02-19-45-839.png);
+    background-size: 100%;
+
+}
+
+#l>#h>.c {
+    background-image: url(./assets/Picsart_24-03-30_02-01-21-553.png);
+    background-size: 20%;
+
+}
+
+@media screen and (width<540px) {
+    #h {
+        height: 10vh;
+    }
+
+    #l>#h>.a {
+        height: 100%;
+        width: 20%;
+        background-size: 30%;
+    }
+
+    #l>#h>.c {
+        height: 100%;
+        width: 20%;
+        background-size: 30%;
+    }
+
+    #h>.b {
+        height: 100%;
+        width: 60%;
+        background-size: 100%;
+    }
+}
+
+@media screen and (width>540px) {
+    #h {
+        height: 20vh;
+    }
+
+    #l>#h>.a {
+        height: 100%;
+        width: 20%;
+        background-size: 30%;
+    }
+
+    #l>#h>.c {
+        height: 100%;
+        width: 20%;
+        background-size: 53%;
+        margin-bottom: 10px;
+    }
+
+    #h>.b {
+        height: 100%;
+        width: 60%;
+        background-size: 100%;
+    }
+}
+
+/* ............................................menu........................................... */
+#m {
+    height: 5%;
+    width: 100%;
+    background: linear-gradient(orange, rgb(196, 86, 21));
+}
+
+#m>ol {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.7%;
+    align-items: center;
+}
+
+#m>ol>li {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+/* ......................................dropdown................................ */
+#home:hover {
+    cursor: pointer;
+}
+
+.homedd {
+    height: 250px;
+    width: 238px;
+    margin-top: 194px;
+    margin-left: 198px;
+    position: absolute;
+    background-color: grey;
+    display: none;
+    transition: display 0.3s step-start;
+}
+
+/* ................................banner....................................... */
+
+#l>#ban {
+    height: 60%;
+    width: 100%;
+    background-image: url(./assets/WhatsApp\ Image\ 2024-03-23\ at\ 3.13.14\ PM-02.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (width>780px) {
+    #l>#ban {
+        height: 80%;
+        background-image: url(./assets/WhatsApp\ Image\ 2024-03-23\ at\ 3.13.14\ PM-02.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+/* ............................................gal...................................... */
+#i>.gal{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+}
